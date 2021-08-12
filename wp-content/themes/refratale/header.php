@@ -9,3 +9,4 @@
 </head>
 <body <?php body_class();?> >
     
+<?php include("template-parts/navbar.php");?>

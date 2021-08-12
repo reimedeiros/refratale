@@ -1,5 +1,5 @@
 <?php get_header(); ?>
 
-    <h1>Entrei no BLOG</h1>
+    <h1>Essa página não existe !</h1>
 
 <?php get_footer(); ?>

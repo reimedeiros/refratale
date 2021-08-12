@@ -1,7 +1,69 @@
-$preto : #000
+@use 'base'
+$y : -100%
+
+@mixin transform($transforms)
+    -webkit-transform: $transforms
+    -moz-transform: $transforms
+    -ms-transform: $transforms
+    transform: $transforms
 
 nav
-    background-color: $preto
+    background-color: base.$branco
+    height: 80px
 
-div
-    background-color: $preto
+/*Menu retratil*/
+.navbar
+    position: fixed !important
+    top: 0
+    left: 0
+    width: 100%
+    box-sizing: border-box
+    transition: .5s
+
+.navbar.hide
+    @mixin translateY($y) 
+    @include transform(translateY($y))
+
+.navbar .channel
+    position: relative
+
+.navbar ul
+    display: flex
+    float: right
+
+.navbar ul li
+    list-style: none
+    line-height: 80px
+    text-align: center
+
+.navbar ul li a
+    display: block
+    text-decoration: none
+    text-transform: uppercase
+    font-weight: bold
+
+.logo
+    width: 250px
+    padding-top: 10px
+
+.brand-logo
+    height: 70px
+
+ul li a
+    color: base.$cinza
+
+ul li a:hover
+    background-color: base.$laranja
+    color: base.$branco
+    border-bottom: 5px solid base.$cinza
+
+ul li a:active
+    background-color: base.$laranja
+    color: base.$branco
+    border-bottom: 5px solid base.$cinza
+
+.topo60
+    padding-top: 60px !important
+
+
+
