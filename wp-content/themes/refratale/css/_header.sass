@@ -19,6 +19,7 @@ nav
     width: 100%
     box-sizing: border-box
     transition: .5s
+    z-index: 1000
 
 .navbar.hide
     @mixin translateY($y) 
@@ -49,18 +50,40 @@ nav
 .brand-logo
     height: 70px
 
-ul li a
-    color: base.$cinza
+nav
+    ul li a
+        color: base.$cinza
 
-ul li a:hover
-    background-color: base.$laranja
-    color: base.$branco
-    border-bottom: 5px solid base.$cinza
+nav
+    ul li a:hover
+        background-color: base.$laranja
+        color: base.$branco
+        border-bottom: 5px solid base.$cinza
 
-ul li a:active
-    background-color: base.$laranja
-    color: base.$branco
-    border-bottom: 5px solid base.$cinza
+nav    
+    ul li a:active
+        background-color: base.$laranja
+        color: base.$branco
+        border-bottom: 5px solid base.$cinza
+
+.sidenav
+        z-index: 1001
+
+.sidenav
+    li a
+        color: base.$cinza
+
+.sidenav
+    li a:hover
+        background-color: base.$laranja
+        color: base.$branco
+        border-bottom: 5px solid base.$cinza
+
+.sidenav    
+    li a:active
+        background-color: base.$laranja
+        color: base.$branco
+        border-bottom: 5px solid base.$cinza
 
 .topo60
     padding-top: 60px !important
