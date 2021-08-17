@@ -16,6 +16,19 @@
   margin-top: 20px;
 }
 
+.btn-whatsapp a {
+  font-size: 2.92rem;
+  font-weight: bold;
+}
+
+.btn-submit {
+  color: #ffffff;
+  font-weight: 600;
+  border: none;
+  padding: 10px 30px;
+  cursor: pointer;
+}
+
 nav {
   background-color: #ffffff;
   height: 80px;
@@ -157,7 +170,7 @@ div .descricao-destaque {
   width: 100%;
 }
 
-.fundo-cinza {
+.fundo-cinza-claro {
   background-color: #d7d7d7;
 }
 
@@ -173,6 +186,10 @@ div .descricao-destaque {
   color: #ffffff;
 }
 
+.fonte-verde {
+  color: #41c452;
+}
+
 .fonte-size23 {
   font-size: 24px;
 }
@@ -185,12 +202,36 @@ div .descricao-destaque {
   padding-top: 10px;
 }
 
+.padding-top20 {
+  padding-top: 20px;
+}
+
+.padding-bottom10 {
+  padding-bottom: 10px;
+}
+
+.padding-bottom20 {
+  padding-bottom: 20px;
+}
+
+.padding-bottom50 {
+  padding-bottom: 50px;
+}
+
 .margin-top40 {
   margin-top: 40px;
 }
 
+.margin-top0 {
+  margin-top: 0px;
+}
+
 .margin-bottom-20 {
   margin-bottom: -20px;
+}
+
+.margin-bottom0 {
+  margin-bottom: 0px;
 }
 
 .carousel {
@@ -213,7 +254,7 @@ div .descricao-destaque {
 }
 
 .img-side {
-  width: 433%;
+  width: 500%;
 }
 
 .img-cobertura {
@@ -227,6 +268,10 @@ div .descricao-destaque {
 .cidades {
   color: #6e6e6e;
   font-size: 25px;
+}
+
+textarea {
+  height: 13rem;
 }
 
 /*# sourceMappingURL=style.css.map */
