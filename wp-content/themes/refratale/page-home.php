@@ -8,7 +8,7 @@ $template_directory = get_template_directory_uri() . "/img/";
     <!-- Início IMG DESTAQUE -->
     <?php
     if (have_posts()) :
-        query_posts(array('category_name'  => 'img_destaque', 'posts_per_page' => 1));
+        // query_posts(array('category_name'  => 'img_destaque', 'posts_per_page' => 1));
         while (have_posts()) : the_post();
             $image = get_field('imagem');
             if (!empty($image)) :
@@ -71,10 +71,8 @@ $template_directory = get_template_directory_uri() . "/img/";
 
 <!-- Início IMG PARALLAX -->
 <?php
-if (have_posts()) :
-    query_posts(array('category_name'  => 'parallax', 'posts_per_page' => 1));
-    while (have_posts()) : the_post();
-        $image = get_field('imagem');
+
+        $image = get_field('parallax_home');
         if (!empty($image)) :
 ?>
             <div class="parallax-container">
@@ -84,12 +82,6 @@ if (have_posts()) :
             </div>
     <?php
         endif;
-    endwhile;
-else :
-    ?>
-    <p>Nenhum parallax cadastrado !</p>
-<?php
-endif;
 ?>
 
 <!-- Início do carousel BLOG -->
@@ -140,7 +132,7 @@ endif;
 </div>
 <!-- Início NOSSOS CLIENTES -->
 
-<div class="fundo-cinza">
+<div class="fundo-cinza-escuro">
     <div class="container">
         <div class="row center-align padding-top10">
             <h3>Nossos Clientes</h3>
