@@ -1,33 +1,36 @@
 @use 'base'
-div 
+div
     .pontos
         font-size: 29px
 
-div 
+div
     .texto-destaque
         font-size: 49px
 
-div 
+.img-servico
+    width: 150%
+    overflow: hidden
+
+div
     .titulo-serviço-home
-        font-size : 24px
-        color : base.$cinza
+        font-size: 24px
+        color: base.$cinza
         padding-bottom: 10px
 
-div 
+div
     .img-servico-home
         width: 300px
 
-div 
+div
     .img
         width: 100%
 
-div 
+div
     .descricao-destaque
         height: 616px
         padding-top: 15%
         margin-top: -65%
         color: #ffffff
-
 
 .parallax-container
     height: 300px !important
@@ -107,7 +110,7 @@ div
 
 .img-cobertura
     width: 100%
-    
+
 .bg-cobertura
     background-color: base.$cinza-claro
 
@@ -120,46 +123,34 @@ div
     font-size: 25px
 
 textarea
-    height: 13rem    
+    height: 13rem
 
 .card-content
     background-color: base.$cinza-claro !important
     text-align: justify !important
 
-.card-action
-    background-color: base.$cinza-claro !important
-    border-bottom: 5px solid base.$cinza
-    text-align: center
-
-.card-action
-    a 
-        background-color: base.$cinza
-        color: base.$branco !important
-        padding: 10px 30px
-
-.card-action
-    a:hover
-        background-color: base.$cinza-2
-
 .card-title
     font-weight: 600 !important
     text-align: center
+    max-width: 18ch
+    overflow: hidden
+    text-overflow: ellipsis
+    white-space: nowrap
 
 .titulo-single
     margin-bottom: -25px
-    
+
 .resumo-single
-        text-align: justify
-        font-weight: 100
-        color: base.$cinza
+    text-align: justify
+    font-weight: 100
+    color: base.$cinza
 
 .conteudo-single
     text-align: justify
     color: base.$cinza
 
 .autor
-        padding: 0px !important
-
+    padding: 0px !important
 
 .autor-nome
     h4
@@ -172,3 +163,44 @@ textarea
 
 .align-center
     margin-left: 33%
+
+.caption
+    background-color: rgba(110,110,110,0.8)
+    padding: 10px 20px 30px 20px
+
+.caption
+    h3
+        color: base.$branco
+
+.card-servico-impar
+    border-left: solid 5px #6e6e6e
+    padding: 0 !important
+.card-servico-par
+    border-right: solid 5px #6e6e6e
+    padding: 0 !important
+
+
+.descricao
+    p
+        text-align: justify !important
+
+.imagem-servico
+    overflow: hidden
+    padding: 0 !important
+
+.imagem-servico-img
+    overflow: hidden
+    width: 150% !important
+    
+.servico-impar
+    padding: 0px 30px 0px 30px !important
+    color: base.$cinza
+
+
+.servico-par
+    padding: 0px 30px 0px 30px !important
+    color: base.$cinza
+
+.titulo-servico
+    span
+        font-size: 28px !important

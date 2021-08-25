@@ -19,7 +19,7 @@ if (have_posts()) :
                 <div class="col s12">
                     <div class="col s6">
                         <div class="row center-align">
-                            <h3 class="margin-top0 margin-bottom0">Sobre Nós</h3>
+                            <h3 class="margin-top0 margin-bottom0"><?php the_title();?></h3>
                         </div>
                         <div class="row descricao_sobre_nos">
                             <p>

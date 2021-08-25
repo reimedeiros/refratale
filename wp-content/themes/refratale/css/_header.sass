@@ -60,11 +60,19 @@ nav
         color: base.$branco
         border-bottom: 5px solid base.$cinza
 
-nav    
-    ul li a:active
-        background-color: base.$laranja
-        color: base.$branco
-        border-bottom: 5px solid base.$cinza
+
+.menu-header-menu-container
+        .menu
+            .current_page_item 
+                a
+                    background-color: base.$laranja !important
+                    color: base.$branco !important
+                    border-bottom: 5px solid base.$cinza !important
+
+.menu-rodape
+    .current_page_item 
+        a
+            border-bottom: 1px solid base.$cinza !important
 
 .sidenav
         z-index: 1001

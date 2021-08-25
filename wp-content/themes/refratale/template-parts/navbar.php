@@ -13,7 +13,8 @@ $template_directory = get_template_directory_uri() . "/img/";
         <ul class="right hide-on-med-and-down">
             <?php wp_nav_menu(
                 array(
-                    'theme_location' => 'top_menu'
+                    'theme_location' => 'top_menu',
+                    'class' => 'menu-top'
                 )
             ); ?>
         </ul>
@@ -23,7 +24,8 @@ $template_directory = get_template_directory_uri() . "/img/";
 <ul class="sidenav" id="mobile-demo">
 <?php wp_nav_menu(
                 array(
-                    'theme_location' => 'top_menu'
+                    'theme_location' => 'top_menu',
+                    'class' => 'menu-top'
                 )
             ); ?>
 </ul>

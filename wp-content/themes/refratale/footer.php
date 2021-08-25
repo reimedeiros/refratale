@@ -26,7 +26,7 @@ $template_directory = get_template_directory_uri() . "/img/";
                 <div class="row menu-rodape">
                     <?php wp_nav_menu(
                         array(
-                            'theme_location' => 'top_menu'
+                            'theme_location' => 'bottom_menu'
                         )
                     ); ?>
                 </div>

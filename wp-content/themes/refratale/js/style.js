@@ -12,6 +12,7 @@ jQuery(document).ready(function ($) {
     $('.parallax').parallax();
     $('.slider').slider();
     $('.carousel').carousel();
+
 });
 
 

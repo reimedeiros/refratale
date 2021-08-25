@@ -85,54 +85,10 @@ $template_directory = get_template_directory_uri() . "/img/";
 ?>
 
 <!-- Início do carousel BLOG -->
-<div class="container">
-    <div class="row center-align">
-        <h3>Blog</h3>
-    </div>
-    <div class="row">
-        <div class="slider">
-            <ul class="slides">
-                <li>
-                    <img src="https://lorempixel.com/580/250/nature/1"> <!-- random image -->
-                    <div class="caption center-align">
-                        <h3>This is our big Tagline!</h3>
-                        <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-                    </div>
-                </li>
-                <li>
-                    <img src="https://lorempixel.com/580/250/nature/2"> <!-- random image -->
-                    <div class="caption left-align">
-                        <h3>Left Aligned Caption</h3>
-                        <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-                    </div>
-                </li>
-                <li>
-                    <img src="https://lorempixel.com/580/250/nature/3"> <!-- random image -->
-                    <div class="caption right-align">
-                        <h3>Right Aligned Caption</h3>
-                        <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-                    </div>
-                </li>
-                <li>
-                    <img src="https://lorempixel.com/580/250/nature/4"> <!-- random image -->
-                    <div class="caption center-align">
-                        <h3>This is our big Tagline!</h3>
-                        <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-                    </div>
-                </li>
-            </ul>
-        </div>
-
-        <div class="row center-align btn-blog">
-            <a class="waves-effect waves-light btn btn-laranja">Mais Posts</a>
-        </div>
-
-    </div>
-
-</div>
+ <?php get_template_part('template-parts/blog-home'); ?>
 <!-- Início NOSSOS CLIENTES -->
 
-<div class="fundo-cinza-escuro">
+<div class="fundo-cinza-claro">
     <div class="container">
         <div class="row center-align padding-top10">
             <h3>Nossos Clientes</h3>
