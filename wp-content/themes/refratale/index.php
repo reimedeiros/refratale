@@ -3,13 +3,6 @@ get_header();
 $template_directory = get_template_directory_uri() . "/img/";
 ?>
 
-<?php
-// if (have_posts()) :
-//     query_posts(array('category_name'  => 'blog_page', 'posts_per_page' => 1));
-//     while (have_posts()) : the_post();
-//         $image = get_field('imagem_parallax');
-//         if (!empty($image)) :
-?>
 
 <div class="parallax-container">
     <div class="parallax">
@@ -26,12 +19,6 @@ $template_directory = get_template_directory_uri() . "/img/";
     </div>
 </div>
 
-
-<?php
-//         endif;
-//     endwhile;
-// else :
-?>
 <!-- <p>Nenhum post cadastrado !</p> -->
 <?php
 // endif;
@@ -44,6 +31,7 @@ $template_directory = get_template_directory_uri() . "/img/";
 
         <?php
         if (have_posts()) :
+            query_posts(array('category_name'  => 'blog', 'posts_per_page' => 9));
             while (have_posts()) : the_post();
                 $image = get_field('imagem_destaque');
                 if (!empty($image)) :

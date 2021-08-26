@@ -34,7 +34,7 @@
         </div>
 
         <div class="row center-align btn-blog">
-            <a class="waves-effect waves-light btn btn-laranja">Mais Posts</a>
+            <a href="blog" class="waves-effect waves-light btn btn-laranja">Mais Posts</a>
         </div>
 
     </div>
